@@ -134,11 +134,11 @@ export default function HeroSlider({
   };
 
   return (
-    <section className="hero-slider relative min-h-[100svh] overflow-hidden bg-black text-white xl:min-h-[calc(80svh-92px)]">
+    <section className="hero-slider relative min-h-[70svh] overflow-hidden bg-black text-white xl:min-h-[calc(100svh-92px)]">
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#20A1C9]/10 blur-[150px]" />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-[#20A1C9]/10 blur-[130px]" />
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-[1620px] flex-col px-4 pb-8 pt-20 sm:pt-24 md:px-8 xl:min-h-[calc(100svh-92px)] xl:py-8">
+      <div className="relative z-10 mx-auto flex min-h-[700svh] w-full max-w-[1620px] flex-col px-4 pb-8 pt-20 sm:pt-24 md:px-8 xl:min-h-[calc(100svh-92px)] xl:py-8">
         <div className="flex flex-1 items-center justify-center py-6 sm:py-10 xl:py-0">
           <div className="mx-auto w-full max-w-6xl text-center">
             <div className="mb-8 flex justify-center sm:mb-10 xl:mb-7">
