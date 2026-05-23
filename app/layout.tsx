@@ -7,6 +7,7 @@ import { Josefin_Sans } from "next/font/google";
 import ClientLayout from "./client-layout";
 import RootLayoutComponent from "components/layout/RootLayout";
 import Header from "components/layout/Header";
+import Footer from "components/layout/Footer";
 
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
@@ -73,7 +74,7 @@ export default function RootLayout({
         <RootLayoutComponent>
           <Header />
           <ClientLayout>{children}</ClientLayout>
-          {/* <Footer /> */}
+          <Footer />
         </RootLayoutComponent>
       </body>
     </html>
