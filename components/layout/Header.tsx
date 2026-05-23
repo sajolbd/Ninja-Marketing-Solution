@@ -19,9 +19,7 @@ type HeaderProps = {
   logoSrc?: string;
 };
 
-export default function Header({
-  logoSrc = "/images/logo-transparent.png",
-}: HeaderProps) {
+export default function Header({ logoSrc = "/images/logo.png" }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
@@ -138,13 +136,17 @@ export default function Header({
             <Menu
               aria-hidden="true"
               className={`absolute h-5 w-5 transition-all duration-300 ${
-                isOpen ? "rotate-90 scale-75 opacity-0" : "rotate-0 scale-100 opacity-100"
+                isOpen
+                  ? "rotate-90 scale-75 opacity-0"
+                  : "rotate-0 scale-100 opacity-100"
               }`}
             />
             <X
               aria-hidden="true"
               className={`absolute h-5 w-5 transition-all duration-300 ${
-                isOpen ? "rotate-0 scale-100 opacity-100" : "-rotate-90 scale-75 opacity-0"
+                isOpen
+                  ? "rotate-0 scale-100 opacity-100"
+                  : "-rotate-90 scale-75 opacity-0"
               }`}
             />
           </button>
@@ -244,7 +246,10 @@ export default function Header({
             >
               <span className="absolute inset-0 -translate-x-full bg-[#20A1C9] transition-transform duration-500 ease-out group-hover:translate-x-0" />
               <span className="relative z-10">Start Project</span>
-              <ArrowUpRight aria-hidden="true" className="relative z-10 h-4 w-4" />
+              <ArrowUpRight
+                aria-hidden="true"
+                className="relative z-10 h-4 w-4"
+              />
             </Link>
           </div>
         </div>
