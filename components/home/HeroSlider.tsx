@@ -131,7 +131,7 @@ export default function HeroSlider({
   };
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-black text-white xl:min-h-[calc(100svh-92px)]">
+    <section className="hero-slider relative min-h-[100svh] overflow-hidden bg-black text-white xl:min-h-[calc(100svh-92px)]">
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#20A1C9]/10 blur-[150px]" />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-[420px] w-[420px] rounded-full bg-[#20A1C9]/10 blur-[130px]" />
 

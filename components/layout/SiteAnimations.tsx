@@ -32,7 +32,10 @@ export default function SiteAnimations({ rootRef }: SiteAnimationsProps) {
           "article, section .grid > div[class*='rounded'], section .grid > a[class*='rounded']",
           root
         )
-        .filter((card) => !card.closest(".marquee-track"));
+        .filter(
+          (card) =>
+            !card.closest(".marquee-track") && !card.closest(".hero-slider")
+        );
 
       cards.forEach((card, index) => {
         gsap.from(card, {
@@ -57,6 +60,7 @@ export default function SiteAnimations({ rootRef }: SiteAnimationsProps) {
           (image) =>
             !isFillImage(image) &&
             !image.closest(".marquee-track") &&
+            !image.closest(".hero-slider") &&
             !image.closest("button")
         );
 
@@ -105,6 +109,7 @@ export default function SiteAnimations({ rootRef }: SiteAnimationsProps) {
         .filter(
           (block) =>
             !block.closest(".marquee-track") &&
+            !block.closest(".hero-slider") &&
             !block.closest(".typing-title") &&
             !block.closest("article")
         );
@@ -131,7 +136,11 @@ export default function SiteAnimations({ rootRef }: SiteAnimationsProps) {
       );
 
       splitBlocks.forEach((block, index) => {
-        if (block.closest(".marquee-track") || block.querySelector("section")) {
+        if (
+          block.closest(".marquee-track") ||
+          block.closest(".hero-slider") ||
+          block.querySelector("section")
+        ) {
           return;
         }
 
