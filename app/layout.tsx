@@ -18,7 +18,6 @@ const deploymentUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "");
 const siteUrl = deploymentUrl || "https://ninja-marketing-solution.vercel.app";
-const ogImageUrl = new URL("/ninja-marketing-og.png", siteUrl).toString();
 
 /* ---------------- METADATA ---------------- */
 
@@ -41,20 +40,11 @@ export const metadata: Metadata = {
     siteName: "Ninja Marketing Solution",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: ogImageUrl,
-        width: 1200,
-        height: 630,
-        alt: "Ninja Marketing Solution Logo",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ninja Marketing Solution",
     description: "Ninja Marketing Solution",
-    images: [ogImageUrl],
   },
 };
 
