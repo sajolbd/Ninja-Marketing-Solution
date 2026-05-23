@@ -19,7 +19,9 @@ type HeaderProps = {
   logoSrc?: string;
 };
 
-export default function Header({ logoSrc = "/images/logo.jpeg" }: HeaderProps) {
+export default function Header({
+  logoSrc = "/images/logo-transparent.png",
+}: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();

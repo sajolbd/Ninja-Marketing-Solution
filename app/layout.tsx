@@ -14,8 +14,11 @@ const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
 });
 
-const siteUrl = "https://dxg-digital.vercel.app";
-const ogImageUrl = `${siteUrl}/og-image.png`;
+const deploymentUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "");
+const siteUrl = deploymentUrl || "https://ninja-marketing-solution.vercel.app";
+const ogImageUrl = "/og-image.png";
 
 /* ---------------- METADATA ---------------- */
 
