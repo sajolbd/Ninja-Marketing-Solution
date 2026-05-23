@@ -24,7 +24,10 @@ export const metadata: Metadata = {
   title: "Ninja Marketing Solution",
   description: "Ninja Marketing Solution",
   icons: {
-    icon: "/favicon.png",
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
     shortcut: "/favicon.png",
     apple: "/apple-icon.png",
   },
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
         url: ogImageUrl,
         width: 1200,
         height: 630,
-        alt: "DXG Digital Logo",
+        alt: "Ninja Marketing Solution Logo",
       },
     ],
   },

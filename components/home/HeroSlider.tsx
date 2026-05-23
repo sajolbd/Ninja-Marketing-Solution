@@ -116,18 +116,18 @@ export default function HeroSlider({
 
   const getSlideMotionClass = (index: number) => {
     if (activeIndex === index) {
-      return "translate-x-0 opacity-100 blur-0";
+      return "translate-x-0 opacity-100";
     }
 
     if (previousIndex === index) {
       return direction === "next"
-        ? "pointer-events-none -translate-x-10 opacity-0 blur-sm lg:-translate-x-20"
-        : "pointer-events-none translate-x-10 opacity-0 blur-sm lg:translate-x-20";
+        ? "pointer-events-none -translate-x-full opacity-0"
+        : "pointer-events-none translate-x-full opacity-0";
     }
 
     return direction === "next"
-      ? "pointer-events-none translate-x-10 opacity-0 blur-sm lg:translate-x-20"
-      : "pointer-events-none -translate-x-10 opacity-0 blur-sm lg:-translate-x-20";
+      ? "pointer-events-none translate-x-full opacity-0"
+      : "pointer-events-none -translate-x-full opacity-0";
   };
 
   return (
@@ -152,7 +152,7 @@ export default function HeroSlider({
               {slides.map((slide, index) => (
                 <div
                   key={`${slide.title}-${index}`}
-                  className={`col-start-1 row-start-1 flex flex-col items-center justify-start transition-[transform,opacity,filter] duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform xl:justify-center ${getSlideMotionClass(index)}`}
+                  className={`col-start-1 row-start-1 flex flex-col items-center justify-start transition-[transform,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform xl:justify-center ${getSlideMotionClass(index)}`}
                 >
                   <h1 className="max-w-[23rem] text-center text-[2.28rem] font-medium uppercase leading-[1.08] tracking-[0.055em] text-white sm:max-w-4xl sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]">
                     {slide.title}
