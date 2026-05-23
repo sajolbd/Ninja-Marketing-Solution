@@ -101,7 +101,10 @@ export default function HeroSlider({
   };
 
   const goToPrevious = () => {
-    goToSlide(activeIndex === 0 ? totalSlides - 1 : activeIndex - 1, "previous");
+    goToSlide(
+      activeIndex === 0 ? totalSlides - 1 : activeIndex - 1,
+      "previous",
+    );
   };
 
   useEffect(() => {
@@ -154,10 +157,10 @@ export default function HeroSlider({
                   key={`${slide.title}-${index}`}
                   className={`col-start-1 row-start-1 flex flex-col items-center justify-start transition-[transform,opacity] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform xl:justify-center ${getSlideMotionClass(index)}`}
                 >
-                  <h1 className="max-w-[23rem] text-center text-[2.28rem] font-medium uppercase leading-[1.08] tracking-[0.055em] text-white sm:max-w-4xl sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]">
+                  <h1 className="max-w-[23rem] text-center text-3xl font-medium uppercase leading-[1.08] tracking-[0.055em] text-white sm:max-w-4xl sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]">
                     {slide.title}
                     <br />
-                    <span className="text-[#20A1C9]">{slide.highlight}</span>
+                    <span className="text-primary">{slide.highlight}</span>
                   </h1>
 
                   <p className="mx-auto mt-7 max-w-2xl text-sm font-medium leading-7 text-white/75 sm:text-lg lg:mt-6 lg:text-xl">

@@ -14,7 +14,7 @@ import {
 
 const companyLinks = [
   { label: "About Ninja Marketing Solution", href: "/about" },
-  { label: "Founder — Tajul Islam", href: "/founder" },
+  { label: "Founder — Jayed Islam", href: "/founder" },
   { label: "Clients", href: "/clients" },
   { label: "Industries", href: "/industries" },
   { label: "Contact", href: "/contact" },
