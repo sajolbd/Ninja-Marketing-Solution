@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Hammer, HelpCircle, Layers, Sparkles, Wrench } from "lucide-react";
 import Container from "components/shared/Container";
 import { servicesData } from "data/services";
-import { getServiceDetail } from "data/serviceDetails";
+import { getServiceDetail, ServiceDetail } from "data/serviceDetails";
 import FaqAccordion from "components/services/FaqAccordion";
 import TypingTitle from "components/layout/TypingTitle";
 
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 export default function ServiceDetailPage({ params }: PageProps) {
-  let detail;
+  let detail: ServiceDetail;
   try {
     detail = getServiceDetail(params.slug);
   } catch (e) {
