@@ -125,8 +125,7 @@ export default function Footer({ logoSrc = "/images/logo.png" }: FooterProps) {
             </Link>
 
             <p className="mt-7 max-w-md text-sm font-medium leading-7 text-white/65 sm:text-base">
-              Ninja Marketing Solution is a digital marketing agency in Dhaka,
-              Bangladesh helping brands grow through measurable strategy,
+              Ninja Marketing Solution is a digital marketing agency in Regina, Saskatchewan, Canada, helping brands grow through measurable strategy,
               performance media and creative.
             </p>
 

@@ -18,7 +18,7 @@ const josefinSans = Josefin_Sans({
 const deploymentUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "");
-const siteUrl = deploymentUrl || "https://ninja-marketing-solution.vercel.app";
+const siteUrl = "https://ninja-marketing-solution.vercel.app";
 
 /* ---------------- METADATA ---------------- */
 

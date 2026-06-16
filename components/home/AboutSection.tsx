@@ -11,7 +11,7 @@ type AboutSectionProps = {
 };
 
 export default function AboutSection({
-  founderImage = "/founder.jpg",
+  founderImage = "/jayed-hosen.jpeg",
 }: AboutSectionProps) {
   return (
     <section className="relative overflow-hidden bg-black py-8 text-white  lg:py-16">
@@ -66,7 +66,7 @@ export default function AboutSection({
                   Founder & CEO
                 </p>
                 <p className="mt-1 text-base font-medium text-white sm:text-lg">
-                  Jayed Islam
+                  Md. Jayed Hosen
                 </p>
               </div>
             </div>

@@ -106,7 +106,9 @@ export default function ServicesSection() {
               <Link
                 key={service.id}
                 href={service.href}
-                className="group relative min-h-[320px] overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-500 hover:border-[#20A1C9] hover:bg-[#20A1C9]/5 md:p-8"
+                className={`group relative min-h-[320px] overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-6 transition-all duration-500 hover:border-[#20A1C9] hover:bg-[#20A1C9]/5 md:p-8 ${
+                  index === 1 ? "hidden md:block" : index === 2 ? "hidden lg:block" : ""
+                }`}
                 style={{
                   animation: `slideInFromRight 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) ${index * 0.12}s both`,
                 }}
