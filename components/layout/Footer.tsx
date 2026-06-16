@@ -130,30 +130,28 @@ export default function Footer({ logoSrc = "/images/logo.png" }: FooterProps) {
             </p>
 
             {/* Address, phone number, email address  */}
-            {/* <div className="mt-7 max-w-md ">
-              
+            <div className="mt-7 max-w-md ">
               <Link
-                href="tel:+8801601654800"
+                href="tel:+13065550199"
                 className="block text-sm font-semibold text-white/75 transition-colors duration-300 hover:text-[#20A1C9] sm:text-base"
               >
-                +88 01601-654800
+                +1 (306) 555-0199
               </Link>
 
               <Link
-                href="mailto:enquiry@ngital.com"
+                href="mailto:enquiry@ninja-marketing.com"
                 className="mt-3 block text-sm font-semibold text-white/75 transition-colors duration-300 hover:text-[#20A1C9] sm:text-base"
               >
-                enquiry@ngital.com
+                enquiry@ninja-marketing.com
               </Link>
 
-              
               <div className="mt-4 flex gap-3 text-sm font-medium leading-6 text-white/65 sm:text-base">
                 <MapPin className="mt-1 h-4 w-4 shrink-0 text-[#20A1C9]" />
                 <p>
-                  House 88, Block-E, Road 17/A, Banani, Dhaka 1213, Bangladesh
+                  Regina, Saskatchewan, Canada
                 </p>
               </div>
-            </div>  */}
+            </div>
           </div>
 
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-8">

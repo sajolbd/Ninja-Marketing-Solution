@@ -10,15 +10,6 @@ import TypingTitle from "components/layout/TypingTitle";
 export default function ServicesSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Auto-play: slide every 3 seconds
-  useEffect(() => {
-    const interval = window.setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % servicesData.length);
-    }, 3000);
-
-    return () => window.clearInterval(interval);
-  }, []);
-
   const goToNext = () => {
     setActiveIndex((prev) => (prev + 1) % servicesData.length);
   };
@@ -53,7 +44,7 @@ export default function ServicesSection() {
 
           <TypingTitle
             as="h2"
-            className="max-w-4xl text-[clamp(2.7rem,6vw,6.2rem)] font-medium uppercase leading-[1.08] tracking-[0.055em] text-3xl text-white sm:max-w-4xl sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]"
+            className="max-w-4xl text-3xl font-medium uppercase leading-[1.08] tracking-[0.055em] text-white sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]"
           >
             A Full-Stack
             <br />
@@ -124,7 +115,7 @@ export default function ServicesSection() {
                 </div>
 
                 <div className="mt-8">
-                  <h3 className="text-[clamp(2.7rem,6vw,6.2rem)] font-medium uppercase leading-[1.08] tracking-[0.055em] text-2xl text-white md:text-3xl sm:tracking-[0.06em] ]">
+                  <h3 className="font-medium uppercase leading-[1.08] text-2xl text-white md:text-3xl sm:tracking-[0.06em]">
                     {service.title}
                   </h3>
 

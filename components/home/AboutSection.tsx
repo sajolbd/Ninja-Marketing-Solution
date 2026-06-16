@@ -37,7 +37,7 @@ export default function AboutSection({
 
             <TypingTitle
               as="h2"
-              className="max-w-2xl text-[clamp(2.7rem,6vw,6.2rem)] font-medium uppercase leading-[1.08] tracking-[0.055em] text-3xl text-white sm:max-w-4xl sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]"
+              className="max-w-2xl text-3xl font-medium uppercase leading-[1.08] tracking-[0.055em] text-white sm:text-5xl sm:tracking-[0.06em] lg:text-5xl lg:tracking-[0.05em]"
             >
               A Digital
               <br />
